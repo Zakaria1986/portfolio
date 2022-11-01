@@ -27,11 +27,10 @@ body {
     'about_me'
     'page-wrapper'
     'footer';
-  justify-content: center;
-  padding: 0 calc(100% - 90%);
-  margin: auto;
-  /* grid-gap: 20px; */
+
+  width: calc(100% - 20%);
   height: 100%;
+  margin: auto;
 }
 
 /* Setting padding to set same alighmnet for all the body children */
@@ -156,6 +155,7 @@ main.page-wrapper {
   flex-direction: column;
 }
 
+/* styleing h2 for the mainsection of the page: portfolio */
 main h2 {
   padding-bottom: 7px;
   border-bottom: 5px solid #783937FF;
@@ -164,6 +164,7 @@ main h2 {
   font-size: 2.3rem;
 }
 
+/* Setting the column of the portfolio secton using grid in columns giving it 3 column using the function repeat() */
 .portfolio_container {
   padding-top: 30px;
   display: grid;
@@ -183,26 +184,26 @@ main h2 {
   border-top: 12px solid #FC766AFF;
   background-color: rgb(252 118 106 / 72%);
   height: 300px;
-  /* padding: 15px; */
+  position: relative;
 }
 
 .portfolios img {
   position: absolute;
-  object-fit: fill;
+  object-fit: cover;
   z-index: 1;
-  width: 100%;
-  height: 100%;
+  width: 99%;
+  height: 99%;
 }
 
 .portfolios ul {
-  background-color: rgb(241, 173, 136, 0.8);
+  background-color: rgb(241, 173, 136, 0.7);
   position: absolute;
   z-index: 2;
   color: white;
   width: 90%;
   height: 88%;
   padding: 5%;
-  font-size: 1rem;
+  font-size: .85rem;
   display: flex;
   flex-direction: column;
 }
@@ -212,8 +213,9 @@ main h2 {
 }
 
 .portfolios ul a {
-
+  position: absolute;
   align-self: end;
+  bottom: 10px;
   padding: 10px;
   color: #FFF;
   background-color: #FC766AFF;
@@ -222,14 +224,26 @@ main h2 {
 .portfolios ul a:hover {
   background-color: #FFF;
   color: #FC766AFF;
+  font-size: 0.85rem;
+  font-weight: bolder;
 
 }
+
+.portfolios ul:hover {
+  background-color: rgb(241, 173, 136, 1);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  font-size: 1rem;
+
+
+}
+
+
 
 
 /* Contact form below */
 section.contact {
   /* background-color: rgba(252, 118, 106, 0.045); */
-  border-color: 2px solid rgb(241, 173, 136, 0.2);
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
   display: flex;
   flex-flow: column wrap;
   gap: 20px;
@@ -238,8 +252,8 @@ section.contact {
 .contact {
   margin: 5px;
   border-radius: 1vw;
-  border-bottom: 10px solid rgba(252, 118, 106, 0.174);
-  background-color: rgb(252 118 106 / 72%);
+  border-bottom: 10px solid rgba(252, 118, 106, 0.17);
+  background-color: rgb(241, 173, 136, 0.1234);
   padding: 15px;
   border-top: 10px solid #FC766AFF;
 }
@@ -294,9 +308,15 @@ section.contact form input[type="submit"]:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
 
 .footer a {
   align-self: center;
+  color: #FFF;
+  padding-right: 20px;
+
+
 }
