@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #783937FF;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas:
+    'header'
+    'about_me'
+    'page-wrapper'
+    'footer';
+  justify-content: center;
+  padding: 0 calc(100% - 90%);
+  margin: auto;
+  /* grid-gap: 20px; */
+  height: 100%;
+}
+
+/* Setting padding to set same alighmnet for all the body children */
+.header,
+.about_me,
+.page-wrapper,
+.footer {
+  padding: 30px;
+}
+
+/* Header section container used as placeholder for log and navigation. For aligning I have used both flex and grid and stand css */
+.header {
+  /* border-radius: 40px 40px 0px 0px; */
+  grid-area: header;
+  background-color: rgb(241, 173, 136) !important;
+  border-bottom: 10px solid #FC766AFF;
+  /* Using grid alight the logo and nav */
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: 'logo nav';
+}
+
+/*  Centering the logo using grid */
+h1.logo {
+  grid-area: logo;
+  align-self: center;
+}
+
+/* Styling the link for the logo */
+h1.logo a {
+  text-shadow: 1px 6px rgba(252, 118, 106, 0.336);
+  text-transform: uppercase;
+  color: #783937FF;
+
+}
+
+h1.logo a:hover {
+  background-color: rgb(241, 173, 136);
+}
+
+/* Using flex to alight the a tag to rightside */
+.nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: end;
+}
+
+/*  */
+.nav a {
+  align-self: center;
+  margin: 10px;
+  color: #FFF;
+  font-size: large;
+  padding: 10px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+/* useing :link CSS pseudo-class */
+a:hover {
+  background-color: #FC766AFF;
+}
+
+
+
+/* About me section sytle, I have used flex to layout for placeholder*/
+
+.about_me {
+  grid-area: about_me;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* background: url(/assets/img/web.jpeg) no-repeat; */
+  background: url(/assets/img/mern-stack-wallpapers.jpeg);
+  background-size: cover;
+  margin: 0 0 20px 0;
+  height: 300px;
+  border-bottom: 10px solid rgba(252, 118, 106, 0.174);
+}
+
+.about_me div {
+  /* border-radius: 140px 10px 140px 10px; */
+  /* background-color: rgb(241, 172, 136, 0.7); */
+  background-color: rgb(252, 118, 106, .9);
+  max-width: auto;
+  align-self: center;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.h2_header,
+.blurb {
+  justify-self: center;
+  gap: 50px;
+  line-height: 1.5rem;
+  align-self: flex-start;
+  padding: 15px 40px;
+  margin: 0 50px;
+  border-left: 10px solid rgb(241, 173, 136);
+}
+
+.h2_header {
+  font-size: 2.3rem;
+}
+
+.blurb {
+  font-size: 1rem;
+}
+
+.blurb {
+  color: rgb(249, 249, 249)
+}
+
+/* Main section starts here */
+
+main.page-wrapper {
+  /* background-color: rgb(252, 118, 106, .1); */
+  grid-area: page-wrapper;
+  display: flex;
+  flex-direction: column;
+}
+
+main h2 {
+  padding-bottom: 7px;
+  border-bottom: 5px solid #783937FF;
+  width: auto;
+  margin: auto;
+  font-size: 2.3rem;
+}
+
+.portfolio_container {
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.portfolios {
+  position: relative;
+}
+
+
+.portfolio_container section {
+  margin: 5px;
+  border-top: 12px solid #FC766AFF;
+  background-color: rgb(252 118 106 / 72%);
+  height: 300px;
+  /* padding: 15px; */
+}
+
+.portfolios img {
+  position: absolute;
+  object-fit: fill;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolios ul {
+  background-color: rgb(241, 173, 136, 0.8);
+  position: absolute;
+  z-index: 2;
+  color: white;
+  width: 90%;
+  height: 88%;
+  padding: 5%;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolios ul li {
+  margin: 10px 25px;
+}
+
+.portfolios ul a {
+
+  align-self: end;
+  padding: 10px;
+  color: #FFF;
+  background-color: #FC766AFF;
+}
+
+.portfolios ul a:hover {
+  background-color: #FFF;
+  color: #FC766AFF;
+
+}
+
+
+/* Contact form below */
+section.contact {
+  /* background-color: rgba(252, 118, 106, 0.045); */
+  border-color: 2px solid rgb(241, 173, 136, 0.2);
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+}
+
+.contact {
+  margin: 5px;
+  border-radius: 1vw;
+  border-bottom: 10px solid rgba(252, 118, 106, 0.174);
+  background-color: rgb(252 118 106 / 72%);
+  padding: 15px;
+  border-top: 10px solid #FC766AFF;
+}
+
+section.contact h2 {
+  margin-bottom: 30px;
+}
+
+section.contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+section.contact form label {
+  font-size: 1.4rem;
+}
+
+section.contact form label input {
+  width: 300px;
+  height: 30px;
+  display: block;
+  clear: both;
+
+}
+
+section.contact form input[type="submit"] {
+  background-color: #FC766AFF;
+  border: none;
+  padding: 10px;
+  color: #FFF;
+  font-size: 16px;
+}
+
+section.contact form input[type="submit"]:hover {
+  background-color: #F1AC88FF;
+}
+
+/* Css for footer bolow */
+
+/* Flex is used to align footer items to center */
+.footer {
+  background-color: rgb(241, 173, 136);
+  border-radius: 4px 4px 1px 1px;
+  border-top: 10px solid #FC766AFF;
+  height: 100px;
+
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.footer a {
+  align-self: center;
+}
