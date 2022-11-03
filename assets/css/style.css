@@ -229,6 +229,13 @@ main h2 {
 
 }
 
+/* Adding padding to card h3 and li list */
+.portfolios h3,
+.profile li {
+   padding: 10px;
+}
+
+/* Cards colour changes when overed over each cards */
 .portfolios ul:hover {
    background-color: rgb(241, 173, 136, 1);
    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -236,9 +243,6 @@ main h2 {
 
 
 }
-
-
-
 
 /* Contact form below */
 section.contact {
@@ -487,8 +491,6 @@ section.contact form input[type="submit"]:hover {
       padding: 0
    }
 }
-
-
 
 @media (min-width: 1500px) {
    body {
