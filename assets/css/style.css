@@ -320,3 +320,64 @@ section.contact form input[type="submit"]:hover {
 
 
 }
+
+
+/* Media queries */
+
+/* Mobile size 400px and small dispaly */
+
+@media (min-width: 400px) {
+
+  /* Any screen small than 400px the bellow code will be execuded by the browser  */
+
+  /* Reseting my body desined from window body setting  to 0 for both pading and margin */
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  /* Styling the link for the logo */
+  h1.logo a {
+
+    font-size: 18px;
+  }
+
+
+  /* Using flex to alight the a tag to rightside */
+
+  /*  Reduced the size of the nav link to fix the screen */
+  .nav a {
+    margin: 0;
+    font-size: small;
+    padding: 5px;
+  }
+
+
+  /* About me section sytle, I have used flex to layout for placeholder*/
+
+  /* reduced margin bottom by half 20/2 */
+  .about_me {
+    margin: 0 0 10px 0;
+
+  }
+
+  /* changed hero section of the header and blurb to user friend text size */
+  .h2_header,
+  .blurb {
+    line-height: 1rem;
+    align-self: flex-start;
+    padding: 15px 20px;
+    margin: 0 40px;
+    border-left: 4px solid rgb(241, 173, 136);
+  }
+
+  .h2_header {
+    font-size: 1.2rem;
+  }
+
+  .blurb {
+    font-size: 0.8rem;
+  }
+
+}
