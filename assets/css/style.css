@@ -393,3 +393,86 @@ section.contact form input[type="submit"]:hover {
 
 
 }
+
+@media (max-width: 1100px) {
+
+   /* Any screen small than 400px the bellow code will be execuded by the browser  */
+
+   /* Reseting my body desined from window body setting  to 0 for both pading and margin and setting width to 100%*/
+   body {
+      width: 100%;
+      margin: 0;
+      padding: 0
+   }
+}
+
+@media (max-width: 900px) {
+
+   /* Any screen small than 400px the bellow code will be execuded by the browser  */
+
+   /* Reseting my body desined from window body setting  to 0 for both pading and margin */
+   body {
+      width: 100%;
+   }
+
+   /*   main section */
+
+   /* Reduce font and pading size for h2 for the mainsection of the page: portfolio */
+   main h2 {
+      border-bottom: 2px solid #783937FF;
+      font-size: 1.3rem;
+   }
+
+   /* Changed setting the column of the portfolio secton using grid in columns 3 to 1 column using the function repeat() */
+   .portfolio_container {
+      grid-template-columns: repeat(2, 1fr);
+
+   }
+
+
+}
+
+@media (max-width: 550px) {
+
+
+   /*   main section */
+
+   /* Reduce font and pading size for h2 for the mainsection of the page: portfolio */
+   main h2 {
+      border-bottom: 2px solid #783937FF;
+      font-size: 1.3rem;
+   }
+
+   /* Changed setting the column of the portfolio secton using grid in columns 3 to 1 column using the function repeat() */
+   .portfolio_container {
+      grid-template-columns: repeat(1, 1fr);
+
+   }
+
+   .nav a {
+      margin: 0;
+      font-size: small;
+      padding: 5px;
+   }
+
+   /* About me section sytle, I have used flex to layout for placeholder*/
+
+   /* reduced margin bottom by half 20/2 */
+   .about_me {
+      margin: 0 0 10px 0;
+
+   }
+
+   /* changed hero section of the header and blurb to user friend text size */
+   .h2_header,
+   .blurb {
+      line-height: 1rem;
+      align-self: flex-start;
+      padding: 15px 20px;
+      margin: 0 40px;
+      border-left: 4px solid rgb(241, 173, 136);
+   }
+
+   .h2_header {
+      font-size: 1.2rem;
+   }
