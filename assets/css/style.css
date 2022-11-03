@@ -336,6 +336,7 @@ section.contact form input[type="submit"]:hover {
 
    /* Reseting my body desined from window body setting  to 0 for both pading and margin */
    body {
+      width: 100%;
       margin: 0;
       padding: 0;
    }
@@ -467,15 +468,18 @@ section.contact form input[type="submit"]:hover {
       grid-template-columns: repeat(2, 1fr);
 
    }
+}
 
-
+@media (min-width: 1500px) {
+   body {
+      width: calc(100% - 30%);
+   }
 }
 
 
 @media (min-width: 1800px) {
    body {
       width: calc(100% - 40%);
-      ;
    }
 }
 
@@ -488,13 +492,6 @@ section.contact form input[type="submit"]:hover {
    body {
       width: 100%;
       margin: 0;
-      padding: 0
-   }
-}
-
-@media (min-width: 1500px) {
-   body {
-      width: calc(100% - 30%);
-      ;
+      padding: 0;
    }
 }
