@@ -25,4 +25,4 @@
         
         Use of media query is to achive mobile responsive web application.
  
- Thank you for reading enjoy browsing! 
+ Thank you for reading and enjoy browsing! 
