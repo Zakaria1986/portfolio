@@ -1,7 +1,8 @@
 # Personal portfolio's 
 
- I have built this user friendly webiste with the hope of introduce my skills and demonstrate my work of art and myself as person to you and the world.
+Live link: https://zakaria1986.github.io/portfolio/
 
+ I have built this user friendly webiste with the hope of introduce my skills and demonstrate my work of art and myself as person to you and the world.
 
 ## This is on page landing site, therefore, on the website you would find total of 5 section:
 
@@ -12,10 +13,12 @@
  - Lastly footer section which which links my social platforms
  
  ## Technical description of the project: 
+
     This site is a showcase of my front-end web technology that inlcudes 
         HTML and use of HTML sementics
         Best practic of web accesibility and usablity of modern web technology
         Best practice of CSS using latest CSS technologyes such as:
+
             - Flex box 
             - grid 
             - Media query 
@@ -24,5 +27,6 @@
         Flex and grid is use to achive the dynamic of the lyout of the side replacing lot legacy css such as padding, block etc. 
         
         Use of media query is to achive mobile responsive web application.
+
  
  Thank you for reading and enjoy browsing! 
