@@ -23,10 +23,13 @@ Live link: https://zakaria1986.github.io/portfolio/
             - grid 
             - Media query 
        
-        
         Flex and grid is use to achive the dynamic of the lyout of the side replacing lot legacy css such as padding, block etc. 
         
         Use of media query is to achive mobile responsive web application.
+
+        Example of large screen page view: 
+        <img scr="assets/img/desktop-screenshot.png">
+        
 
  
  Thank you for reading and enjoy browsing! 
