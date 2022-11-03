@@ -394,43 +394,6 @@ section.contact form input[type="submit"]:hover {
 
 }
 
-@media (max-width: 1100px) {
-
-   /* Any screen small than 400px the bellow code will be execuded by the browser  */
-
-   /* Reseting my body desined from window body setting  to 0 for both pading and margin and setting width to 100%*/
-   body {
-      width: 100%;
-      margin: 0;
-      padding: 0
-   }
-}
-
-@media (max-width: 900px) {
-
-   /* Any screen small than 400px the bellow code will be execuded by the browser  */
-
-   /* Reseting my body desined from window body setting  to 0 for both pading and margin */
-   body {
-      width: 100%;
-   }
-
-   /*   main section */
-
-   /* Reduce font and pading size for h2 for the mainsection of the page: portfolio */
-   main h2 {
-      border-bottom: 2px solid #783937FF;
-      font-size: 1.3rem;
-   }
-
-   /* Changed setting the column of the portfolio secton using grid in columns 3 to 1 column using the function repeat() */
-   .portfolio_container {
-      grid-template-columns: repeat(2, 1fr);
-
-   }
-
-
-}
 
 @media (max-width: 550px) {
 
@@ -476,3 +439,60 @@ section.contact form input[type="submit"]:hover {
    .h2_header {
       font-size: 1.2rem;
    }
+}
+
+@media (max-width: 900px) {
+
+   /* Any screen small than 400px the bellow code will be execuded by the browser  */
+
+   /* Reseting my body desined from window body setting  to 0 for both pading and margin */
+   body {
+      width: 100%;
+   }
+
+   /*   main section */
+
+   /* Reduce font and pading size for h2 for the mainsection of the page: portfolio */
+   main h2 {
+      border-bottom: 2px solid #783937FF;
+      font-size: 1.3rem;
+   }
+
+   /* Changed setting the column of the portfolio secton using grid in columns 3 to 1 column using the function repeat() */
+   .portfolio_container {
+      grid-template-columns: repeat(2, 1fr);
+
+   }
+
+
+}
+
+
+@media (min-width: 1800px) {
+   body {
+      width: calc(100% - 40%);
+      ;
+   }
+}
+
+
+@media (max-width: 1100px) {
+
+   /* Any screen small than 400px the bellow code will be execuded by the browser  */
+
+   /* Reseting my body desined from window body setting  to 0 for both pading and margin and setting width to 100%*/
+   body {
+      width: 100%;
+      margin: 0;
+      padding: 0
+   }
+}
+
+
+
+@media (min-width: 1500px) {
+   body {
+      width: calc(100% - 30%);
+      ;
+   }
+}
